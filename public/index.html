@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Técnica DataCRM - Pasantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for Elegance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-database"></i> <span>DataCRM</span> WebService
+            </div>
+            <h1>Prueba Técnica</h1>
+        </header>
+
+        <main>
+            <section class="controls">
+                <button id="btnLoadContacts" class="btn-elegant">
+                    <i class="fas fa-sync-alt"></i> Cargar Contactos
+                </button>
+            </section>
+
+            <section id="resultArea" class="result-area">
+                <div id="loader" class="loader hidden">
+                    <div class="spinner"></div>
+                    <p>Consultando API...</p>
+                </div>
+
+                <div id="contactsTableContainer" class="table-container">
+                    <div class="empty-state">
+                        <i class="far fa-id-card"></i>
+                        <p>Presiona el botón para cargar los contactos de la API.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JQuery as requested -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
